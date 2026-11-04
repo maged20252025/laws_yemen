@@ -2,14 +2,6 @@
 cmake_minimum_required(VERSION 3.14)
 project(laws_yemen LANGUAGES CXX)
 
-if (MSVC)
-    add_compile_options(/permissive)
-    add_compile_options(/std:c++17)
-    # هذا السطر الجديد هو السحر: سيقوم بتعطيل التحقق الصارم الذي يسبب خطأ variant
-    add_compile_options(/Zc:lambda-) 
-    add_definitions(-D_CRT_SECURE_NO_WARNINGS)
-endif()
-
 # The name of the executable created for the application. Change this to change
 # the on-disk name of your application.
 set(BINARY_NAME "laws_yemen")
@@ -46,7 +38,7 @@ add_definitions(-DUNICODE -D_UNICODE)
 # default. In most cases, you should add new options to specific targets instead
 # of modifying this function.
 function(APPLY_STANDARD_SETTINGS TARGET)
-  target_compile_features(${TARGET} PUBLIC cxx_std_20)
+  target_compile_features(${TARGET} PUBLIC cxx_std_17)
   target_compile_options(${TARGET} PRIVATE /W4 /WX /wd"4100")
   target_compile_options(${TARGET} PRIVATE /EHsc)
   target_compile_definitions(${TARGET} PRIVATE "_HAS_EXCEPTIONS=0")
