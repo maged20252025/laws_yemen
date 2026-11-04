@@ -15,7 +15,6 @@ jobs:
       - name: Set up Flutter
         uses: subosito/flutter-action@v2
         with:
-          flutter-version: '3.27.x'
           channel: stable
           cache: true
 
@@ -37,7 +36,7 @@ jobs:
           flutter doctor -v
           cmake --version
           Write-Host "CMAKE_GENERATOR=$env:CMAKE_GENERATOR"
-          & "${env:ProgramFiles(x86)}\Microsoft Visual Studio\Installer\vswhere.exe" -all -products * -format table
+          & "${env:ProgramFiles(x86)}\Microsoft Visual Studio\Installer\vswhere.exe" -all -products * -format json
 
       - name: Build Windows Release
         run: flutter build windows --release
