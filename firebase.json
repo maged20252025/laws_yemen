@@ -1,0 +1,28 @@
+{
+  "flutter": {
+    "platforms": {
+      "dart": {
+        "lib/firebase_options.dart": {
+          "projectId": "yemeni-laws-app",
+          "configurations": {
+            "android": "1:786658675093:android:e6adf1f4366d25b1face9c",
+            "ios": "1:786658675093:ios:e993c32a6a50e14fface9c"
+          }
+        }
+      },
+      "android": {
+        "default": {
+          "projectId": "yemeni-laws-app",
+          "appId": "1:786658675093:android:e6adf1f4366d25b1face9c",
+          "fileOutput": "android/app/google-services.json"
+        }
+      }
+    }
+  },
+  "firestore": {
+    "database": "(default)",
+    "location": "europe-west3",
+    "rules": "firestore.rules",
+    "indexes": "firestore.indexes.json"
+  }
+}

@@ -1,0 +1,61 @@
+{
+  "project_info": {
+    "project_number": "786658675093",
+    "project_id": "yemeni-laws-app",
+    "storage_bucket": "yemeni-laws-app.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:786658675093:android:e6adf1f4366d25b1face9c",
+        "android_client_info": {
+          "package_name": "com.example.laws_yemen"
+        },
+        "other_platform_oauth_client": [
+          {
+            "client_id": "786658675093-434gro04l690r5sd0463mrar6bmbk0h1.apps.googleusercontent.com",
+            "client_type": 3
+          }
+        ]
+      },
+      "oauth_client": [
+        {
+          "client_id": "786658675093-9dg793pu5v2s6fv0lm5kajdvlsc5mtt6.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.laws_yemen",
+            "certificate_hash": "e1681e94aad74e66359a6fb1d6984af3b2e9a3db"
+          }
+        },
+        {
+          "client_id": "786658675093-3hmbm7ujuv7hvtnv611qi9k9kk18p4tr.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.laws_yemen",
+            "certificate_hash": "fcd7bcec:cd3c:7073:fd70:f94d:dd60:c12e:734e:a501"
+          }
+        },
+        {
+          "client_id": "786658675093-434gro04l690r5sd0463mrar6bmbk0h1.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCxezBkAJv8cRXQB8MDkhuJcZCCwI0d33I"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "786658675093-434gro04l690r5sd0463mrar6bmbk0h1.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

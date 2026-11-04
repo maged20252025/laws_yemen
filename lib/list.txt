@@ -1,0 +1,47 @@
+
+📁 المجلد: F:\FlutterApps\laws_yemen\lib
+   📂 gen
+   📂 screens
+   📂 services
+   📂 utils
+   📂 version
+   📄 firebase_options.dart
+   📄 list_paths.py
+   📄 main.dart
+   📄 word_to_json.py
+
+📁 المجلد: F:\FlutterApps\laws_yemen\lib\gen
+   📄 assets.gen.dart
+
+📁 المجلد: F:\FlutterApps\laws_yemen\lib\screens
+   📄 activation_screen.dart
+   📄 all_indices_screen.dart
+   📄 devices_management_screen.dart
+   📄 favorites_screen.dart
+   📄 free_trial_screen.dart
+   📄 global_search_screen.dart
+   📄 google_Login_Screen.dart
+   📄 home_screen.dart
+   📄 intro_screen.dart
+   📄 judgments_selection_screen.dart
+   📄 law_articles_screen.dart
+   📄 law_selection_screen.dart
+   📄 our_services_screen.dart
+   📄 prosecution_selection_screen.dart
+   📄 regulations_selection_screen.dart
+   📄 splash_screen.dart
+   📄 subscription_screen.dart
+
+📁 المجلد: F:\FlutterApps\laws_yemen\lib\services
+   📄 favorites_sync_service.dart
+   📄 fcm_service.dart
+   📄 free_trial_manager.dart
+   📄 subscription_service.dart
+
+📁 المجلد: F:\FlutterApps\laws_yemen\lib\utils
+   📄 law_loader.dart
+   📄 upload_codes.dart
+
+📁 المجلد: F:\FlutterApps\laws_yemen\lib\version
+   📄 check_version.dart
+   📄 version.dart
