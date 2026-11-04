@@ -33,6 +33,11 @@ jobs:
         run: flutter create . --platforms=windows --overwrite
         shell: cmd
 
+      - name: Fix CMake Generator Version
+        run: |
+          powershell -Command "(Get-Content windows/CMakeLists.txt) -replace 'project\(.*LANGUAGES CXX\)', 'project(laws_yemen C CXX)' | Set-Content windows/CMakeLists.txt"
+        shell: cmd
+
       - name: Build Windows Release
         run: flutter build windows --release
         shell: cmd
