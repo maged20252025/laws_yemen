@@ -3,6 +3,7 @@ name: Build Flutter Windows
 on:
   push:
     branches: [ "main", "master" ]
+  workflow_dispatch:
 
 jobs:
   build:
@@ -21,21 +22,12 @@ jobs:
       - name: Enable Windows Desktop
         run: flutter config --enable-windows-desktop
 
-      - name: Clean Build Files
-        run: flutter clean
-        shell: cmd
-
       - name: Get Dependencies
         run: flutter pub get
         shell: cmd
 
-      - name: Force Create Windows Platform
-        run: flutter create . --platforms=windows --overwrite
-        shell: cmd
-
-      - name: Fix CMake Generator Version
-        run: |
-          powershell -Command "(Get-Content windows/CMakeLists.txt) -replace 'project\(.*LANGUAGES CXX\)', 'project(laws_yemen C CXX)' | Set-Content windows/CMakeLists.txt"
+      - name: Create Windows Platform Fresh
+        run: flutter create . --platforms=windows
         shell: cmd
 
       - name: Build Windows Release
