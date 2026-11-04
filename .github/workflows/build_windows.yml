@@ -21,14 +21,17 @@ jobs:
       - name: Enable Windows Desktop
         run: flutter config --enable-windows-desktop
 
-      - name: Force Clean and Recreate Windows Platform
-        run: |
-          rmdir /s /q windows
-          flutter create . --platforms=windows
+      - name: Clean Build Files
+        run: flutter clean
         shell: cmd
 
-      - name: Install Dependencies
+      - name: Get Dependencies
         run: flutter pub get
+        shell: cmd
+
+      - name: Force Create Windows Platform
+        run: flutter create . --platforms=windows --overwrite
+        shell: cmd
 
       - name: Build Windows Release
         run: flutter build windows --release
