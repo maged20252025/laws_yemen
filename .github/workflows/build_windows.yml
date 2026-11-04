@@ -21,8 +21,10 @@ jobs:
       - name: Enable Windows Desktop
         run: flutter config --enable-windows-desktop
 
-      - name: Regenerate Windows Platform
-        run: flutter create . --platforms=windows
+      - name: Force Clean and Recreate Windows Platform
+        run: |
+          rmdir /s /q windows
+          flutter create . --platforms=windows
         shell: cmd
 
       - name: Install Dependencies
