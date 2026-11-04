@@ -21,14 +21,16 @@ jobs:
       - name: Enable Windows Desktop
         run: flutter config --enable-windows-desktop
 
+      - name: Regenerate Windows Platform
+        run: flutter create . --platforms=windows
+        shell: cmd
+
       - name: Install Dependencies
         run: flutter pub get
 
       - name: Build Windows Release
         run: flutter build windows --release
         shell: cmd
-        env:
-          CMAKE_GENERATOR: "Visual Studio 17 2022"
 
       - name: Upload Artifact
         uses: actions/upload-artifact@v4
