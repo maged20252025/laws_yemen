@@ -31,6 +31,14 @@ jobs:
       - name: Clean Build
         run: flutter clean
 
+      - name: Diagnose Windows Build Environment
+        shell: pwsh
+        run: |
+          flutter doctor -v
+          cmake --version
+          Write-Host "CMAKE_GENERATOR=$env:CMAKE_GENERATOR"
+          & "${env:ProgramFiles(x86)}\Microsoft Visual Studio\Installer\vswhere.exe" -all -products * -format table
+
       - name: Build Windows Release
         run: flutter build windows --release
 
