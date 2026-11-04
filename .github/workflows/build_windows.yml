@@ -22,7 +22,7 @@ jobs:
         run: flutter config --enable-windows-desktop
 
       - name: Create Windows Platform
-        run: flutter create . --platforms=windows --overwrite
+        run: flutter create . --platforms=windows
 
       - name: Install Dependencies
         run: flutter pub get
