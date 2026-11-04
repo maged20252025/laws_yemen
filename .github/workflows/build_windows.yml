@@ -26,9 +26,10 @@ jobs:
 
       - name: Build Windows Release
         run: flutter build windows --release
+        shell: cmd
 
       - name: Upload Artifact
         uses: actions/upload-artifact@v4
         with:
           name: windows-release-exe
-          path: build/windows/runner/release/
+          path: build/windows/x64/runner/release/
