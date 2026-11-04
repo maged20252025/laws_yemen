@@ -39,7 +39,7 @@ jobs:
           & "${env:ProgramFiles(x86)}\Microsoft Visual Studio\Installer\vswhere.exe" -all -products * -format json
 
       - name: Build Windows Release
-        run: flutter build windows --release
+        run: flutter build windows --release --cmake-args="-DCMAKE_POLICY_VERSION_MINIMUM=3.5"
 
       - name: Upload Windows Release
         uses: actions/upload-artifact@v4
